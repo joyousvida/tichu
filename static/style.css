@@ -1,0 +1,78 @@
+body {
+	font-family: arial, tahoma, verdana;
+	font-size: 14px;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 50px;
+}
+
+table.center {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+table {
+	width:800px;
+	margin: 10px;
+	padding: 10px;
+	border: 10px solid #99CCFF;
+}
+
+#chatdiv {
+	height:50px;
+	overflow:auto;
+}
+
+#chatinput {
+	width:100%;
+}
+
+/* for jquery-ui dialog */
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+input.card-input {
+    text-transform: uppercase;
+}
+
+div.tichu-card {
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+	padding: 2px;
+    border: solid 1px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+}
+div.tichu-card.selected-card-to-pass {
+    background-color:#FF99CC;
+}
+div.tichu-card.selected-card {
+    background-color:#FFFF99;
+}
+
+
+button {
+	font-family: arial, tahoma, verdana;
+	font-size: 14px;
+  border: solid 0px #99CCFF;
+  padding: 7px;
+  margin: 5px;
+  background: #99CCFF;
+  color: #FFFFFF;
+  user-select:none;
+}
+
+
+button.unclickable {
+  font-family: arial, tahoma, verdana;
+  font-size: 14px;
+  border: solid 0px #FFCC99;
+  padding: 7px;
+  margin: 5px;
+  background: #FFCC99;
+  color: #FFFFFF;
+  user-select:none;
+}

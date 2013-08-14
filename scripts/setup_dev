@@ -1,0 +1,13 @@
+#!/bin/bash
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR=$SCRIPT_DIR/..
+
+# TODO: install nodejs
+# TODO: install mysql
+# TODO: configure mysql?
+
+sudo npm install -g coffee-script
+#sudo npm install -g iced-coffee-script
+sudo npm install -g express
+sudo npm install -g mysql

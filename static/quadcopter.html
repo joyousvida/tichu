@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style>
+      iframe {
+        width: 800px;
+        height: 600px;
+
+        -moz-transform: scale(0.75, 0.75);
+        -webkit-transform: scale(0.75, 0.75);
+        -o-transform: scale(0.75, 0.75);
+        -ms-transform: scale(0.75, 0.75);
+        transform: scale(0.75, 0.75);
+        -moz-transform-origin: top left;
+        -webkit-transform-origin: top left;
+        -o-transform-origin: top left;
+        -ms-transform-origin: top left;
+        transform-origin: top left;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload = function() {
+        for (var i = 0; i < 4; i++) {
+          var pid = 'p' + i;
+          var div = document.getElementById(pid);
+          (function(_div) {
+            setTimeout(function() {
+              _div.innerHTML = '<iframe src="/"></iframe>';
+            }, 500 * i);
+          })(div);
+        }
+      };
+    </script>
+  </head>
+
+  <body>
+    <div style="position:absolute; top:0px; left:0px; width:800px; height:600px;" id="p0"></div>
+    <div style="position:absolute; top:0px; left:600px; width:800px; height:600px;" id="p1"></div>
+    <div style="position:absolute; top:450px; left:0px; width:800px; height:600px;" id="p2"></div>
+    <div style="position:absolute; top:450px; left:600px; width:800px; height:600px;" id="p3"></div>
+  </body>
+</html>

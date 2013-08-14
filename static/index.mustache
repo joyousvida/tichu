@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Tichu</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="/jquery-2.0.2.min.js"></script>
+  <script type="text/javascript" src="/jquery-ui-1.10.3/ui/minified/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="/js/http_util.js"></script>
+  <script type="text/javascript" src="/js/poll_client.js"></script>
+  <script type="text/javascript" src="/js/arrangeable_list.js"></script>
+  <script type="text/javascript" src="/js/tichu_hand.js"></script>
+  <script type="text/javascript" src="/js/client.js"></script>
+  <script>
+  window.TEMPLATE_PARAMS = {{{js_params}}};
+  </script>
+</head>
+
+<body>
+  <p align="center"><b>Welcome: {{player_id}}</b></p>
+  <button id="leave-table-button">Leave table</button>
+  <button id="logout-button">Log out</button>
+
+  <table class="center">
+    <tr>
+      <td align="center" colspan="3"><div id="friend2"></div></td>
+    </tr>
+
+    <tr>
+      <td align="center" width="20%"><div id="foe1"></div></td>
+      <td align="center" width="60%" height="200px" style="border:solid 2px #99CCFF"><div id="table_div"></div></td>
+      <td align="center" width="20%"><div id="foe3"></div></td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3">
+        <div id="self0"></div>
+        <div id="hand_div"></div>
+        <div id="action_div"></div>
+      </td>
+    </tr>
+  </table>
+
+  <table class="center"><tr><td>
+    CHATBOX.<br />
+    <div id="chatdiv"></div>
+    <input type="text" id="chatinput" />
+  </td></tr></table>
+
+</body>
+</html>

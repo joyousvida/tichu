@@ -1,0 +1,7 @@
+#!/bin/bash
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR=$SCRIPT_DIR/..
+
+#export NODE_PATH=${NODE_PATH}:${ROOT_DIR}
+nodemon --exec "iced" ${ROOT_DIR}/server/index.iced

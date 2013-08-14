@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mysql <<EOF
+DROP DATABASE tichu;
+CREATE DATABASE tichu;
+EOF
