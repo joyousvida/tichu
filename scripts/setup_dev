@@ -7,7 +7,18 @@ ROOT_DIR=$SCRIPT_DIR/..
 # TODO: install mysql
 # TODO: configure mysql?
 
-sudo npm install -g coffee-script
-#sudo npm install -g iced-coffee-script
-sudo npm install -g express
-sudo npm install -g mysql
+# Install node packages:
+# Alternatively, do `sudo npm install -g browserify`
+npm install browserify
+npm install coffee-script
+npm install express
+npm install iced-coffee-script
+npm install mustache
+npm install mysql
+npm install socket.io
+npm install through
+
+./dev.sh
+scripts/tichu_start
+
+# Now visit http://localhost:8888 or http://localhost:8888/quadcopter.html
