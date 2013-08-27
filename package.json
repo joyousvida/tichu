@@ -1,0 +1,45 @@
+{
+  "name": "tichu-server",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "Joy Zhang <vinterstad@gmail.com>",
+  "description": "Server for the best card game!",
+  "contributors": [
+    {
+      "name": "Joy Zhang",
+      "email": "vinterstad@gmail.com"
+    },
+    {
+      "name": "Alex Zhai",
+      "email": "alexlinzhai@gmail.com"
+    }
+  ],
+  "scripts": {
+    "start": "scripts/tichu_start"
+  },
+  "main": "./server/tichu_game/tichu_game.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joyousvida/tichu.git"
+  },
+  "keywords": [
+    "tichu"
+  ],
+  "dependencies" : {
+    "browserify" : "x.x.x",
+    "coffee-script" : "x.x.x",
+    "express" : "x.x.x",
+    "iced-coffee-script" : "x.x.x",
+    "mustache" : "x.x.x",
+    "mysql" : "x.x.x",
+    "socket.io" : "x.x.x"
+  },
+  "devDependencies": {
+  },
+  "bundledDependencies": [
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}

@@ -10,24 +10,30 @@ Server for my favorite card game: http://en.wikipedia.org/wiki/Tichu
 
 - [node.js](http://nodejs.org/)
 
-- node packages: browserify, coffee-script, express, iced-coffee-script, mustache, mysql, socket.io, through
+- [npm](https://npmjs.org/)
+
+- Install required node packages
 ```
-npm install browserify
-npm install coffee-script
-...
+cd tichu
+npm install
+```
+
+- Install nodemon and iced globally
+```
+npm install -g nodemon iced-coffee-script
 ```
 
 - create a mysql db called 'tichu' and give user ''@'localhost' permissions
 ```
 mysql> CREATE DATABASE tichu;
-mysql> GRANT ALL on tichu TO ''@'localhost';
+mysql> GRANT ALL ON tichu.* TO ''@'localhost';
 ```
 
 ## RUN ##
 ```
 $ cd tichu
 $ ./dev.sh
-$ scripts/tichu_start
+$ npm start
 24 Aug 17:38:21 - [nodemon] v0.7.8
 24 Aug 17:38:21 - [nodemon] to restart at any time, enter `rs`
 24 Aug 17:38:21 - [nodemon] watching: /Users/joyzhang/Desktop/joy/git/tichu
